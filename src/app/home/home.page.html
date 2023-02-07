@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Meu primeiro app
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> <!--faz todo o front no ion content-->
+
+  <ion-button expand="block" (click)="exibirMensagem()">Clique aqui</ion-button> <!--toda vez q der um clique chama esse metodoexibir msg-->
+
+  <ion-input [readonly]="true" value={{mensagem}}></ion-input> <!--o value esta mostrando a variavel-->
+
+</ion-content>
